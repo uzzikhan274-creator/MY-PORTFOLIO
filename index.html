@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hi Trick — Web Designer &amp; Digital Creative</title>
+<meta name="description" content="Hi Trick is a Web Designer and Digital Creative studio with 3 years of experience crafting modern, responsive, user-friendly websites and digital brand experiences.">
+<meta name="theme-color" content="#0c0d10">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hi Trick — Web Designer & Digital Creative">
+<meta property="og:description" content="Modern, responsive, user-friendly digital experiences for businesses, brands, and individuals.">
+<meta property="og:image" content="assets/logo-mark.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="shortcut icon" href="assets/favicon-32.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Hi Trick, home">
+      <img src="logo-mark.png" alt="Hi Trick" class="nav__logo-img">
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#work" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--sm btn--primary nav__cta">Let's Work Together</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a href="#home" class="mobile-menu__link">Home</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#services" class="mobile-menu__link">Services</a>
+      <a href="#skills" class="mobile-menu__link">Skills</a>
+      <a href="#work" class="mobile-menu__link">Projects</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary mobile-menu__cta">Let's Work Together</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero__inner">
+      <div class="hero__top" data-reveal>
+        <span class="status-pill">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          Available for Projects
+        </span>
+        <span class="hero__years">3+ Years Experience</span>
+      </div>
+
+      <h1 class="hero__headline">
+        <span class="reveal-line"><span>Designing digital</span></span>
+        <span class="reveal-line"><span>experiences that</span></span>
+        <span class="reveal-line"><span><em>stand out.</em></span></span>
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__lead" data-reveal>
+          I'm a professional Web Designer and Digital Creative with three years of
+          experience creating modern, responsive, and user‑friendly digital
+          experiences for businesses, brands, and individuals.
+        </p>
+
+        <div class="hero__actions" data-reveal>
+          <a href="#work" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      Scroll
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-inner about__grid">
+      <div class="about__head" data-reveal>
+        <p class="section-kicker">About</p>
+        <h2 class="section-title about__title">
+          A designer and developer who treats every pixel like it has a job to do.
+        </h2>
+      </div>
+
+      <div class="about__body" data-reveal>
+        <p class="about__lede">
+          I am a professional Web Designer and Digital Creative with three years
+          of experience designing and developing modern, responsive, and
+          user‑friendly websites.
+        </p>
+        <p>
+          I provide a complete range of digital services, helping businesses,
+          brands, and individuals build a strong and professional online
+          presence.
+        </p>
+        <p>
+          I combine creativity, design, development, and digital marketing
+          skills to create complete digital solutions — from first sketch to
+          shipped product.
+        </p>
+      </div>
+
+      <div class="about__stats" data-reveal>
+        <div class="about__stat">
+          <span class="about__stat-num" data-count="3">0</span>
+          <span class="about__stat-label">Years of experience</span>
+        </div>
+        <div class="about__stat">
+          <span class="about__stat-num" data-count="40">0</span>
+          <span class="about__stat-label">Projects delivered</span>
+        </div>
+        <div class="about__stat">
+          <span class="about__stat-num" data-count="5">0</span>
+          <span class="about__stat-label">Core disciplines</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="services__head" data-reveal>
+        <p class="section-kicker">Services</p>
+        <h2 class="section-title">A complete toolkit for building your online presence</h2>
+      </div>
+
+      <div class="services__list">
+        <article class="service-card" data-reveal>
+          <div class="service-card__top">
+            <span class="service-card__num">01</span>
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Web Design</h3>
+          <p class="service-card__desc">Modern, clean, responsive, and visually appealing website designs that provide a smooth user experience across desktop, tablet, and mobile devices.</p>
+          <span class="service-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__top">
+            <span class="service-card__num">02</span>
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 4L2 12l6 8M16 4l6 8-6 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Web Development</h3>
+          <p class="service-card__desc">Fast, responsive, functional, and user‑friendly websites using modern web technologies — with a focus on clean structure, performance, and usability.</p>
+          <span class="service-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__top">
+            <span class="service-card__num">03</span>
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 3a9 9 0 010 18" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Graphic Design</h3>
+          <p class="service-card__desc">Professional visual designs including social media graphics, banners, promotional designs, website graphics, and business materials.</p>
+          <span class="service-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__top">
+            <span class="service-card__num">04</span>
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M17 9l4-2v10l-4-2" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Video Editing</h3>
+          <p class="service-card__desc">Professional video editing for social media content, promotional videos, advertisements, reels, and other short‑form digital projects.</p>
+          <span class="service-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__top">
+            <span class="service-card__num">05</span>
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">SEO</h3>
+          <p class="service-card__desc">Search engine optimization focused on SEO‑friendly structure, on‑page and technical improvements, and overall search performance.</p>
+          <span class="service-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__top">
+            <span class="service-card__num">06</span>
+            <span class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="8" r="2.4" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="16" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M9.1 9.1l6 -2.2M9.1 9.9l6 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Social Media</h3>
+          <p class="service-card__desc">I help businesses and brands build a professional social media presence through creative content, social media designs, promotional graphics, banners, reels, and engaging visual content.</p>
+          <span class="service-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <div class="skills__head" data-reveal>
+        <p class="section-kicker">Capabilities</p>
+        <h2 class="section-title">Where I add the most value</h2>
+      </div>
+
+      <div class="skills__columns">
+        <div class="skills__col" data-reveal>
+          <h3 class="skills__col-title">Design</h3>
+          <ul class="skills__list">
+            <li>Web Design</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Design</li>
+            <li>Graphic Design</li>
+            <li>Social Media Design</li>
+          </ul>
+        </div>
+        <div class="skills__col" data-reveal>
+          <h3 class="skills__col-title">Development</h3>
+          <ul class="skills__list">
+            <li>Web Development</li>
+            <li>Landing Pages</li>
+            <li>Performance Optimization</li>
+            <li>Video Editing</li>
+          </ul>
+        </div>
+        <div class="skills__col" data-reveal>
+          <h3 class="skills__col-title">Growth</h3>
+          <ul class="skills__list">
+            <li>SEO Strategy</li>
+            <li>On‑Page SEO</li>
+            <li>Technical SEO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills__marquee" aria-hidden="true">
+      <div class="skills__marquee-track">
+        <span>Web Design</span><span>·</span>
+        <span>Web Development</span><span>·</span>
+        <span>UI/UX</span><span>·</span>
+        <span>Graphic Design</span><span>·</span>
+        <span>Video Editing</span><span>·</span>
+        <span>SEO</span><span>·</span>
+        <span>Web Design</span><span>·</span>
+        <span>Web Development</span><span>·</span>
+        <span>UI/UX</span><span>·</span>
+        <span>Graphic Design</span><span>·</span>
+        <span>Video Editing</span><span>·</span>
+        <span>SEO</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I CAN HELP WITH ============ -->
+  <section class="help" id="help">
+    <div class="section-inner">
+      <div class="help__head" data-reveal>
+        <p class="section-kicker">What I can help with</p>
+        <h2 class="section-title">Bring me a goal — here's how we can get there</h2>
+      </div>
+
+      <div class="help__accordion" data-reveal>
+        <div class="help__item is-open">
+          <button class="help__trigger" aria-expanded="true">
+            <span>Websites</span>
+            <span class="help__trigger-icon" aria-hidden="true"></span>
+          </button>
+          <div class="help__panel">
+            <p>Modern Website Design, Responsive Development, Landing Pages, Business Websites, Portfolio Websites, E‑commerce Websites.</p>
+          </div>
+        </div>
+
+        <div class="help__item">
+          <button class="help__trigger" aria-expanded="false">
+            <span>Design</span>
+            <span class="help__trigger-icon" aria-hidden="true"></span>
+          </button>
+          <div class="help__panel">
+            <p>UI/UX Design, Graphic Design, Social Media Designs, Banners &amp; Promotional Graphics.</p>
+          </div>
+        </div>
+
+        <div class="help__item">
+          <button class="help__trigger" aria-expanded="false">
+            <span>Video</span>
+            <span class="help__trigger-icon" aria-hidden="true"></span>
+          </button>
+          <div class="help__panel">
+            <p>Video Editing, Reels &amp; Short‑Form Videos, promotional and advertising content.</p>
+          </div>
+        </div>
+
+        <div class="help__item">
+          <button class="help__trigger" aria-expanded="false">
+            <span>Search &amp; Performance</span>
+            <span class="help__trigger-icon" aria-hidden="true"></span>
+          </button>
+          <div class="help__panel">
+            <p>Website SEO, On‑Page SEO, Technical SEO, Website Performance Optimization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="section-inner">
+      <div class="process__head" data-reveal>
+        <p class="section-kicker">Approach</p>
+        <h2 class="section-title">How I work</h2>
+      </div>
+
+      <ol class="process__timeline">
+        <li class="process__step" data-reveal>
+          <span class="process__num">01</span>
+          <div class="process__content">
+            <h3>Discover</h3>
+            <p>Understand the business, goals, audience, and project requirements.</p>
+          </div>
+        </li>
+        <li class="process__step" data-reveal>
+          <span class="process__num">02</span>
+          <div class="process__content">
+            <h3>Design</h3>
+            <p>Create a clear, modern, and visually engaging digital experience.</p>
+          </div>
+        </li>
+        <li class="process__step" data-reveal>
+          <span class="process__num">03</span>
+          <div class="process__content">
+            <h3>Develop</h3>
+            <p>Turn the approved design into a fast, responsive, functional website.</p>
+          </div>
+        </li>
+        <li class="process__step" data-reveal>
+          <span class="process__num">04</span>
+          <div class="process__content">
+            <h3>Refine</h3>
+            <p>Test, optimize, improve performance, and polish every detail.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <div class="work__head" data-reveal>
+        <p class="section-kicker">Selected Work</p>
+        <h2 class="section-title">A few projects worth a closer look</h2>
+      </div>
+
+      <div class="work__grid">
+
+        <article class="work-card work-card--wide" data-reveal>
+          <div class="work-card__media work-card__media--browser" data-art="1">
+            <div class="mock-browser"><span></span><span></span><span></span></div>
+          </div>
+          <div class="work-card__info">
+            <div>
+              <span class="work-card__cat">Business Website</span>
+              <h3 class="work-card__title">Northline Studio</h3>
+              <p class="work-card__desc">A confident marketing site for a design‑build studio, built for fast load times and easy content updates.</p>
+            </div>
+            <a href="#" class="work-card__link" aria-label="View Northline Studio project">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <div class="work-card__media" data-art="2"></div>
+          <div class="work-card__info">
+            <div>
+              <span class="work-card__cat">Creative Portfolio</span>
+              <h3 class="work-card__title">Aveline Rey</h3>
+              <p class="work-card__desc">A minimal editorial portfolio for a visual artist, built around large imagery and quiet motion.</p>
+            </div>
+            <a href="#" class="work-card__link" aria-label="View Aveline Rey project">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <div class="work-card__media" data-art="3"></div>
+          <div class="work-card__info">
+            <div>
+              <span class="work-card__cat">Landing Page</span>
+              <h3 class="work-card__title">Fieldnote</h3>
+              <p class="work-card__desc">A conversion‑focused landing page for a productivity app's public launch.</p>
+            </div>
+            <a href="#" class="work-card__link" aria-label="View Fieldnote project">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <div class="work-card__media" data-art="4"></div>
+          <div class="work-card__info">
+            <div>
+              <span class="work-card__cat">E‑commerce</span>
+              <h3 class="work-card__title">Halo Goods</h3>
+              <p class="work-card__desc">A streamlined storefront for a small‑batch home goods brand, tuned for mobile checkout.</p>
+            </div>
+            <a href="#" class="work-card__link" aria-label="View Halo Goods project">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card work-card--wide" data-reveal>
+          <div class="work-card__media work-card__media--browser" data-art="5">
+            <div class="mock-browser"><span></span><span></span><span></span></div>
+          </div>
+          <div class="work-card__info">
+            <div>
+              <span class="work-card__cat">Brand Website</span>
+              <h3 class="work-card__title">Solace Coffee Co.</h3>
+              <p class="work-card__desc">A full brand refresh and site build for a specialty coffee roaster, from identity to storefront.</p>
+            </div>
+            <a href="#" class="work-card__link" aria-label="View Solace Coffee Co. project">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <div class="work-card__media" data-art="6"></div>
+          <div class="work-card__info">
+            <div>
+              <span class="work-card__cat">Digital Experience</span>
+              <h3 class="work-card__title">Meridian Labs</h3>
+              <p class="work-card__desc">An interactive product showcase built to explain a technical platform in plain language.</p>
+            </div>
+            <a href="#" class="work-card__link" aria-label="View Meridian Labs project">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 18L18 6M18 6H9M18 6v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section class="why">
+    <div class="section-inner">
+      <div class="why__head" data-reveal>
+        <p class="section-kicker">Why work with me</p>
+        <h2 class="section-title">What you get, every project</h2>
+      </div>
+
+      <div class="why__grid">
+        <div class="why__item" data-reveal>
+          <h3>3+ Years Experience</h3>
+          <p>A proven process refined across dozens of real client projects.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <h3>Modern &amp; Creative Design</h3>
+          <p>Interfaces that feel current, considered, and distinct to your brand.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <h3>Responsive Development</h3>
+          <p>Every build tested and tuned across desktop, tablet, and mobile.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <h3>Performance Focused</h3>
+          <p>Fast load times and clean code, without sacrificing visual quality.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <h3>User‑Centered Approach</h3>
+          <p>Decisions grounded in how real people will actually use the site.</p>
+        </div>
+        <div class="why__item" data-reveal>
+          <h3>Complete Digital Services</h3>
+          <p>Design, development, and marketing under one roof — one point of contact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOAL STATEMENT ============ -->
+  <section class="goal">
+    <div class="section-inner">
+      <p class="goal__text" data-reveal>
+        My goal is to create high‑quality digital experiences that help
+        businesses and individuals present themselves professionally,
+        connect with their audience, and grow their online presence.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact__grid">
+      <div class="contact__info" data-reveal>
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title contact__title">Have a project in mind?</h2>
+        <p class="contact__lead">Let's create something modern, useful, and memorable.</p>
+
+        <dl class="contact__details">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@hitrick.com">hello@hitrick.com</a></dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Remote · Available worldwide</dd>
+          </div>
+          <div>
+            <dt>Elsewhere</dt>
+            <dd class="social-icons">
+              <a href="#" class="social-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H4V20h2.94V8.5ZM5.47 4a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM20 13.54c0-3.1-1.66-4.54-3.87-4.54-1.78 0-2.58 1-3.03 1.66V8.5H10.1c.04.86 0 12 0 12h3V13.7c0-.32.02-.64.12-.87.25-.63.83-1.28 1.8-1.28 1.27 0 1.98.86 1.98 2.4V20H20v-6.46Z"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Behance">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h6a2.6 2.6 0 0 1 0 5.2H3V7Zm0 5.2h6.6A2.8 2.8 0 0 1 12.4 15v0A2.8 2.8 0 0 1 9.6 17.8H3v-5.6Z"/><path d="M14 5h5.5M14.3 13.4c.15-2 1.6-3.4 3.7-3.4 2.3 0 3.7 1.6 3.7 4.1 0 .2 0 .4-.02.6h-7.36c.1 1.6 1.1 2.6 2.66 2.6 1.1 0 1.9-.5 2.2-1.3h2.3c-.5 1.9-2.2 3.1-4.5 3.1-2.9 0-4.7-1.9-4.7-4.9 0-.3.01-.5.02-.8Z"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="contact__form" id="contactForm" data-reveal novalidate>
+        <div class="field">
+          <label for="fName">Name</label>
+          <input type="text" id="fName" name="name" autocomplete="name" required>
+          <span class="field__error" id="err-name"></span>
+        </div>
+
+        <div class="field">
+          <label for="fEmail">Email</label>
+          <input type="email" id="fEmail" name="email" autocomplete="email" required>
+          <span class="field__error" id="err-email"></span>
+        </div>
+
+        <div class="field">
+          <label for="fType">Project type</label>
+          <select id="fType" name="projectType" required>
+            <option value="" disabled selected>Select a project type</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Video Editing">Video Editing</option>
+            <option value="SEO">SEO</option>
+            <option value="Other">Something else</option>
+          </select>
+          <span class="field__error" id="err-type"></span>
+        </div>
+
+        <div class="field">
+          <label for="fMessage">Message</label>
+          <textarea id="fMessage" name="message" rows="4" required></textarea>
+          <span class="field__error" id="err-message"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary contact__submit">
+          <span class="btn__label">Send Message</span>
+        </button>
+
+        <p class="contact__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer__grid">
+    <div class="footer__brand">
+      <a href="#home" class="nav__logo footer__logo" aria-label="Hi Trick, home">
+        <img src="logo-mark.png" alt="Hi Trick" class="nav__logo-img">
+      </a>
+      <p>Web Designer &amp; Digital Creative helping brands build a stronger online presence.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="#services">Web Design</a>
+      <a href="#services">Web Development</a>
+      <a href="#services">Graphic Design</a>
+      <a href="#services">SEO</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Social</h4>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H4V20h2.94V8.5ZM5.47 4a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM20 13.54c0-3.1-1.66-4.54-3.87-4.54-1.78 0-2.58 1-3.03 1.66V8.5H10.1c.04.86 0 12 0 12h3V13.7c0-.32.02-.64.12-.87.25-.63.83-1.28 1.8-1.28 1.27 0 1.98.86 1.98 2.4V20H20v-6.46Z"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Behance">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h6a2.6 2.6 0 0 1 0 5.2H3V7Zm0 5.2h6.6A2.8 2.8 0 0 1 12.4 15v0A2.8 2.8 0 0 1 9.6 17.8H3v-5.6Z"/><path d="M14 5h5.5M14.3 13.4c.15-2 1.6-3.4 3.7-3.4 2.3 0 3.7 1.6 3.7 4.1 0 .2 0 .4-.02.6h-7.36c.1 1.6 1.1 2.6 2.66 2.6 1.1 0 1.9-.5 2.2-1.3h2.3c-.5 1.9-2.2 3.1-4.5 3.1-2.9 0-4.7-1.9-4.7-4.9 0-.3.01-.5.02-.8Z"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner footer__bottom">
+    <p>© 2026 Hi Trick. All rights reserved.</p>
+    <button class="footer__top" id="toTop" aria-label="Back to top">Back to top ↑</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
