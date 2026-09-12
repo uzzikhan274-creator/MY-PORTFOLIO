@@ -116,6 +116,277 @@
   }
 
   /* =========================================================
+   PROJECTS
+   Change the "image" path to change the top image.
+   Example:
+   image: "images/project1.jpg"
+   ========================================================= */
+
+var PROJECTS_DATA = [
+  {
+    image: "images%20website/state%20agent.png",
+    browser: true,
+    category: "Business Website",
+    title: "Northline Studio",
+    desc: "A confident marketing site for a design-build studio, built for fast load times and easy content updates.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/car.png",
+    browser: false,
+    category: "Creative Portfolio",
+    title: "Aveline Rey",
+    desc: "A minimal editorial portfolio for a visual artist, built around large imagery and quiet motion.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/grapgic%20desiner.png",
+    browser: false,
+    category: "Landing Page",
+    title: "Fieldnote",
+    desc: "A conversion-focused landing page for a productivity app's public launch.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/smook.png",
+    browser: false,
+    category: "E-commerce",
+    title: "Halo Goods",
+    desc: "A streamlined storefront for a small-batch home goods brand, tuned for mobile checkout.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/brand.png",
+    browser: true,
+    category: "Brand Website",
+    title: "Solace Coffee Co.",
+    desc: "A full brand refresh and site build for a specialty coffee roaster, from identity to storefront.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/beauty.png",
+    browser: false,
+    category: "Digital Experience",
+    title: "Meridian Labs",
+    desc: "An interactive product showcase built to explain a technical platform in plain language.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/bad.png",
+    browser: false,
+    category: "Mobile App",
+    title: "Driftwood Journal",
+    desc: "A calm, distraction-free journaling app interface designed for daily habit-building.",
+    link: "#"
+  },
+
+  {
+    image: "images%20website/guns.png",
+    browser: true,
+    category: "Nonprofit Website",
+    title: "Harbor Relief",
+    desc: "A donation-focused nonprofit site built to earn trust quickly and convert first-time visitors.",
+    link: "#"
+  }
+];
+
+
+var pinWrap = document.getElementById("workPinWrap");
+var pin = document.getElementById("workPin");
+var marquee = document.getElementById("workMarquee");
+var track = document.getElementById("workTrack");
+
+
+if (pinWrap && pin && marquee && track) {
+
+  var projects = PROJECTS_DATA;
+
+
+  function cardHTML(p) {
+
+    var browserBar = p.browser
+      ? `
+        <div class="mock-browser">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      `
+      : "";
+
+
+    var mediaClass =
+      "work-card__media" +
+      (p.browser ? " work-card__media--browser" : "");
+
+
+    var href = p.link || "#";
+
+
+    return `
+      <article class="work-card" data-reveal>
+
+        <div class="${mediaClass}">
+
+          <img
+            src="${p.image}"
+            alt="${p.title}"
+            loading="lazy"
+          />
+
+          ${browserBar}
+
+        </div>
+
+
+        <div class="work-card__info">
+
+          <div>
+
+            <span class="work-card__cat">
+              ${p.category}
+            </span>
+
+            <h3 class="work-card__title">
+              ${p.title}
+            </h3>
+
+            <p class="work-card__desc">
+              ${p.desc}
+            </p>
+
+          </div>
+
+
+          <a
+            href="${href}"
+            class="work-card__link"
+            aria-label="View ${p.title} project"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M6 18L18 6M18 6H9M18 6v9"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+          </a>
+
+        </div>
+
+      </article>
+    `;
+  }
+
+
+  /* Generate cards */
+  track.innerHTML = projects
+    .map(cardHTML)
+    .join("");
+
+
+  /* Show injected cards */
+  track
+    .querySelectorAll("[data-reveal]")
+    .forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+
+
+  var maxScroll = 0;
+  var pinTopOffset = 0;
+
+
+  /* Measure carousel */
+  function measurePin() {
+
+    var navEl = document.getElementById("nav");
+
+    pinTopOffset = navEl
+      ? navEl.offsetHeight
+      : 0;
+
+
+    pin.style.top =
+      pinTopOffset + "px";
+
+
+    pin.style.height =
+      (window.innerHeight - pinTopOffset) + "px";
+
+
+    maxScroll = Math.max(
+      0,
+      track.scrollWidth - marquee.clientWidth
+    );
+
+
+    pinWrap.style.height =
+      (pin.offsetHeight + maxScroll) + "px";
+  }
+
+
+  /* Horizontal movement */
+  function updateTrack() {
+
+    var rect =
+      pinWrap.getBoundingClientRect();
+
+
+    var scrolled =
+      pinTopOffset - rect.top;
+
+
+    var progress =
+      maxScroll > 0
+        ? Math.min(
+            Math.max(scrolled / maxScroll, 0),
+            1
+          )
+        : 0;
+
+
+    track.style.transform =
+      "translateX(" +
+      (-progress * maxScroll) +
+      "px)";
+  }
+
+
+  measurePin();
+  updateTrack();
+
+
+  window.addEventListener(
+    "scroll",
+    updateTrack,
+    { passive: true }
+  );
+
+
+  window.addEventListener(
+    "resize",
+    function () {
+      measurePin();
+      updateTrack();
+    }
+  );
+
+}
+  /* =========================================================
      HELP — accordion (single-open)
   ========================================================= */
   var helpItems = document.querySelectorAll('.help__item');
@@ -339,3 +610,4 @@
   }
 
 })();
+
