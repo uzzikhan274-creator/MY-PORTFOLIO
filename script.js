@@ -208,7 +208,14 @@ if (pinWrap && pin && marquee && track) {
   var projects = PROJECTS_DATA;
 
 
-  function cardHTML(p) {
+  function slugify(str) {
+    return String(str)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
+  function cardHTML(p, i) {
 
     var browserBar = p.browser
       ? `
@@ -228,9 +235,12 @@ if (pinWrap && pin && marquee && track) {
 
     var href = p.link || "#";
 
+    var cardClass =
+      "work-card work-card--" + i + " work-card--" + slugify(p.title);
+
 
     return `
-      <article class="work-card" data-reveal>
+      <article class="${cardClass}" data-reveal>
 
         <div class="${mediaClass}">
 
