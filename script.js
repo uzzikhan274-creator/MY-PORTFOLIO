@@ -124,7 +124,7 @@
 
 var PROJECTS_DATA = [
   {
-    image: "images%20website/state%20agent.png",
+    image: "state%20agent.png",
     browser: true,
     category: "Business Website",
     title: "Northline Studio",
@@ -133,7 +133,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/car.png",
+    image: "car.png",
     browser: false,
     category: "Creative Portfolio",
     title: "Aveline Rey",
@@ -142,7 +142,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/grapgic%20desiner.png",
+    image: "grapgic%20desiner.png",
     browser: false,
     category: "Landing Page",
     title: "Fieldnote",
@@ -151,7 +151,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/smook.png",
+    image: "smook.png",
     browser: false,
     category: "E-commerce",
     title: "Halo Goods",
@@ -160,7 +160,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/brand.png",
+    image: "brand.png",
     browser: true,
     category: "Brand Website",
     title: "Solace Coffee Co.",
@@ -169,7 +169,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/beauty.png",
+    image: "beauty.png",
     browser: false,
     category: "Digital Experience",
     title: "Meridian Labs",
@@ -178,7 +178,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/bad.png",
+    image: "bad.png",
     browser: false,
     category: "Mobile App",
     title: "Driftwood Journal",
@@ -187,7 +187,7 @@ var PROJECTS_DATA = [
   },
 
   {
-    image: "images%20website/guns.png",
+    image: "guns.png",
     browser: true,
     category: "Nonprofit Website",
     title: "Harbor Relief",
